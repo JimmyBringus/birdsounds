@@ -17,8 +17,6 @@ export const FishFacts = ({displayFish}) => {
           let response = await axios.get(`https://www.fishwatch.gov/api/species/`)
         //   setFish(response.data)
           setFish(response.data[randomNumber(115)])
-          console.log(response.data[randomNumber(115)])
-          console.log(response.data[randomNumber(115)]["Image Gallery"][0].src)
       }catch(err){
           console.log(err)
       }
