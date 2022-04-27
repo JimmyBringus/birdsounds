@@ -26,13 +26,13 @@ export const FishFacts = ({displayFish}) => {
 
     const tasty = `${fish.Taste}`
 
-    console.log(`${fish["Image Gallery"]}`)
+    console.log(fish["Image Gallery"])
 
     return (
         <div className='fishBox'>
             <h2>{fish["Species Name"]}</h2>
             <div className='imgContainer'>
-                <img src={fish["Image Gallery"].src} alt={fish["Image Gallery"].alt}></img>
+                <img src={fish["Image Gallery"][0].src} alt="picture of fish"></img>
             </div>
             <div className='flavorContainer'>
                 <div>{Parser(tasty)}</div>
