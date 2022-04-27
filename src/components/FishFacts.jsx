@@ -14,22 +14,24 @@ export const FishFacts = ({displayFish}) => {
   }, [displayFish])
   const goFish = async () => {
       try {
-          const response = await axios.get(`https://www.fishwatch.gov/api/species/`)
+          let response = await axios.get(`https://www.fishwatch.gov/api/species/`)
         //   setFish(response.data)
           setFish(response.data[randomNumber(115)])
           console.log(response.data[randomNumber(115)])
+          console.log(response.data[randomNumber(115)]["Image Gallery"][0].src)
       }catch(err){
           console.log(err)
       }
     }
 
     const tasty = `${fish.Taste}`
+    const image = `${fish["Image Gallery"]}`
 
     return (
         <div className='fishBox'>
             <h2>{fish["Species Name"]}</h2>
             <div className='imgContainer'>
-                <img src={fish["Image Gallery"][1].src} alt={fish["Image Gallery"][1].alt}></img>
+                <img src={image[0].src} alt={image[0].alt}></img>
             </div>
             <div className='flavorContainer'>
                 <div>{Parser(tasty)}</div>
