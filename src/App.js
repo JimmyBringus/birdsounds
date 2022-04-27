@@ -10,7 +10,7 @@ const App = () => {
       <header className="fish-header"></header>
       <main>
         <div className="fishpic-container">
-          <h1>GoFish</h1>
+          <h1>Fish Flavortown</h1>
           <FishFacts />
         </div>
           <div className='button-container'>

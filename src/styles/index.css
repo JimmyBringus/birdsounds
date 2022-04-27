@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.imgContainer {
+  min-width: 200px;
+}
+
+.fishpic {
+  min-width: 200px;
+}

@@ -31,7 +31,7 @@ export const FishFacts = ({displayFish}) => {
         <div className='fishBox'>
             <h2>{fish["Species Name"]}</h2>
             <div className='imgContainer'>
-                <img src={image[0].src} alt={image[0].alt}></img>
+                <img className='fishpic' src={image[0].src} alt={image[0].alt}></img>
             </div>
             <div className='flavorContainer'>
                 <div>{Parser(tasty)}</div>
