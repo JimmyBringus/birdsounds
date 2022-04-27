@@ -1,25 +1,23 @@
-import logo from './styles/Mander.svg';
-import './styles/App.css';
+import './styles/App.css'
+import { FishFacts } from './components/FishFacts';
 
-function App() {
+const App = () => {
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header className="fish-header"></header>
+      <main>
+        <div className="fishpic-container">
+          <h1>GoFish</h1>
+          <FishFacts />
+        </div>
+          <div className='button-container'>
+        </div>
+      </main>
     </div>
-  );
+  )
 }
 
 export default App;
